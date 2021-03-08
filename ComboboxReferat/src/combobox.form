@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="combobox">
-  <grid id="27dc6" binding="panel" layout-manager="GridLayoutManager" row-count="6" column-count="7" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+  <grid id="27dc6" binding="panel" layout-manager="GridLayoutManager" row-count="6" column-count="8" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
     <margin top="0" left="0" bottom="0" right="0"/>
     <constraints>
-      <xy x="20" y="20" width="533" height="400"/>
+      <xy x="20" y="20" width="644" height="400"/>
     </constraints>
     <properties>
       <background color="-11237294"/>
@@ -15,7 +15,10 @@
         <constraints>
           <grid row="1" column="1" row-span="2" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
         </constraints>
-        <properties/>
+        <properties>
+          <font name="Arial Black" style="1"/>
+          <lightWeightPopupEnabled value="false"/>
+        </properties>
       </component>
       <component id="b0249" class="javax.swing.JComboBox" binding="comboBox2">
         <constraints>
@@ -84,11 +87,23 @@
       </vspacer>
       <hspacer id="78d62">
         <constraints>
-          <grid row="2" column="6" row-span="4" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false">
+          <grid row="2" column="7" row-span="4" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false">
             <minimum-size width="25" height="-1"/>
           </grid>
         </constraints>
       </hspacer>
+      <component id="4212e" class="javax.swing.JComboBox" binding="comboBox3">
+        <constraints>
+          <grid row="1" column="6" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-16114880"/>
+          <editable value="false"/>
+          <enabled value="true"/>
+          <foreground color="-1"/>
+          <model/>
+        </properties>
+      </component>
     </children>
   </grid>
 </form>

@@ -1,6 +1,7 @@
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.lang.reflect.Array;
 
 public class combobox {
     private JPanel panel;
@@ -11,9 +12,11 @@ public class combobox {
     private JButton hinzufuegenButton;
     private JButton entfernenButton;
     private JSpinner entfernen;
+    private JComboBox comboBox3;
 
 
     public combobox() {
+
         //editierbare Combobox
         comboBox2.setEditable(true);
 
@@ -21,13 +24,25 @@ public class combobox {
         comboBox.addItem("eins");
         comboBox.addItem(2);
         comboBox.addItem("vier");
+
         comboBox2.addItem("bearbeiten");
         comboBox2.addItem("auch bearbeitbar");
 
-        comboBox.
+        comboBox3.addItem("Themen");
+        comboBox3.addItem("     Allgemein");
+        comboBox3.addItem("     Funktionen");
+        comboBox3.addItem("     Code Beispiel");
+
+        //String[] texte = new String[]{"a","b","c"};
+
+        //JComboBox combo = new JComboBox(texte);
+        //panel.add(combo);
 
         //An bestimmter Stelle einfügen
         comboBox.insertItemAt("drei", 0);
+
+        //Schrift Mittig anzeigen
+        ((JLabel)comboBox.getRenderer()).setHorizontalAlignment(SwingConstants.CENTER);
 
         //ausgewähltes objekt
         comboBox.setSelectedIndex(2);
